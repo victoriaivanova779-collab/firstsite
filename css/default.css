@@ -13,8 +13,8 @@ body{
     margin-top, margin-right, margin-bottom, margin-left.
     margin: 20px; (20px Abstand auf allen vier Seiten).
     margin: 10px 5px; (10px oben/unten, 5px links/rechts).*/
-    margin: 0px;
+    margin: 20px;
     color:var(--text-color);
-    background-color:var(--bg-light);
+    background:var(--bg-light);
 
 }
