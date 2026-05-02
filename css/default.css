@@ -1,0 +1,20 @@
+:root{
+    --primary-color:var(black);
+    --secundary-color:var(brown);
+
+    --text-color:var(black);
+    --text-light:var(white);
+    --bg-color:var(black);
+    --bg-light:vat(beige);
+}
+
+body{
+    /*Außenabstand
+    margin-top, margin-right, margin-bottom, margin-left.
+    margin: 20px; (20px Abstand auf allen vier Seiten).
+    margin: 10px 5px; (10px oben/unten, 5px links/rechts).*/
+    margin: 0px;
+    color:var(--text-color);
+    background-color:var(--bg-light);
+
+}
