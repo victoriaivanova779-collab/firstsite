@@ -1,0 +1,605 @@
+/* ========================================
+   CSS-Skeleton für Studierende
+   ----------------------------------------
+   Zweck: Diese Datei gibt dir eine Struktur und die wichtigsten Selektoren
+   damit du die Styles selbst ausfüllen kannst.
+
+   Hinweise
+   - Mobile‑first denken: erst Basis, dann Media Queries ergänzen.
+   - Design‑System‑Variablen nutzen (siehe Abschnitt 1) statt harter Werte.
+   - Viele Seiten sind per Body‑Klasse scoped (z. B. .about-page, .kurse-page).
+     Wenn Effekte „nicht greifen“, prüfe, ob die Klasse im HTML auf <body> steht!
+   - Nicht alles ist vorgegeben – manche Selektoren sind nur als Beschreibung
+     hinterlegt, damit du dir selbst überlegst, was genau du selektieren willst.
+
+   Verwendung
+   - Kopiere diese Datei als Grundlage in dein Projekt und fülle die TODO‑Blöcke.
+   - Oder nutze sie parallel zu default.css, um deine eigenen Lösungen zu üben.
+   ======================================== */
+
+/* ========================================
+   1. CSS‑Variablen (Design‑System)
+   ======================================== */
+:root {
+  /* TODO: Definiere Farben, Abstände, Schriften, Radius, Schatten, Transitions (Kopiere das aus der Aufgabenstellung hier rein */
+  /* Beispiel‑Namen: */
+  /* --primary-color: ; --secondary-color: ; --accent-color: ; */
+  --primary-color: #2563eb; /* Hauptfarbe */
+  --secondary-color: #10b981; /* Akzentfarbe */
+  --accent-color: #f59e0b; /* Highlight */
+  
+
+
+  /* --text-color: ; --text-light: ; --bg-color: ; --bg-white: ; */
+ --text-color: #1f2937; /* Haupttext */
+ --text-light: #6b7280; /* Heller Text */
+ --bg-color: #f9fafb; /* Hintergrund */
+ --bg-white: #ffffff; /* Weiß */
+ --border-color: #d1d5db; /* Rahmen */
+
+  /* --spacing-xs: ; --spacing-sm: ; --spacing-md: ; --spacing-lg: ; --spacing-xl: ; */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 1rem; /* 16px */
+  --spacing-md: 1.5rem; /* 24px */
+  --spacing-lg: 2rem; /* 32px */
+  --spacing-xl: 3rem; /* 48px */
+
+  --font-sans: 'Inter', -apple-system, sans-serif;
+
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  /* --font-sans: ; --font-size-base: ; --font-size-2xl: ; --radius-lg: ; */
+  --font-sans: "Inter", sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  /* --shadow-sm: ; --shadow-md: ; --shadow-lg: ; */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Border-Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+
+  /* --transition-fast: ; --transition-base: ; */
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+
+  /* --container-max: ; --container-pad: ; */
+}
+
+/* ========================================
+   2. Reset & Base Styles
+   ======================================== */
+* { box-sizing: border-box; }
+
+html { 
+    scroll-behavior: smooth;
+ }
+ 
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+img, svg, video { max-width: 100%; height: auto; display: block; }
+
+.container { /* TODO: zentrierten Container umsetzen (width, max-width, margin, padding) */ }
+.visually-hidden { /* TODO: Visually hidden Utility */ }
+hr.divider { /* TODO: Standard‑Divider (Border, Margin) */ }
+
+a { color: var(--primary-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ========================================
+   3. Typografie
+   ======================================== */
+h1, h2, h3 { /* TODO: gemeinsame Heading‑Stile */ }
+h1 { text-shadow: var(--shadow-sm); 
+}
+h2 { /* TODO */ }
+h3 { /* TODO */ }
+
+p { /* TODO: Absatzabstände, Farbe */ }
+small { /* TODO: heller Text */ }
+
+ul, ol { /* TODO: Außen-/Innenabstände für Listen */ }
+li { /* optional */ }
+
+dt { /* TODO: dt betonen */ }
+dd { /* TODO: dt/dd Abstand */ }
+
+/* ========================================
+   4. Layout (Header, Navigation, Main, Footer)
+   ======================================== */
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto; /* zentrieren */
+    padding-inline: var(--spacing-sm);
+}
+
+.site-header {
+  /* TODO: Gradient‑Header umsetzen (linear-gradient mit zwei Markenfarben) */
+    background: linear-gradient(135deg, #8b5cf6, #a855f7); /* Lila → Violett */
+    color: white;
+    padding: 60px 20px;
+
+    animation: fadeIn 1.2s ease-out forwards;
+}
+.site-header .site-title { /* TODO */ 
+}
+.site-header .site-title .brand-link { /* TODO: Linkfarbe im Header */ }
+.site-header .site-description { /* TODO */ }
+
+
+
+
+
+nav ul {
+    background-color: #ffffff;
+    display: flex;
+    gap: var(--spacing-md);
+    list-style: none;
+    padding: var(--spacing-md);
+}
+
+nav a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    padding: var(--spacing-sm);
+    transition: var(--transition-base);
+}
+
+nav a:hover {
+    color: rgb(245, 245, 247);
+    background-color: rgba(14, 50, 212, 0.5);
+    border-radius: var(--radius-sm);
+      
+}
+
+/* Sub Navigation als eigene Leiste */
+.sub-nav {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xs);
+  margin: var(--spacing-md) 0 0 0; /* Abstand unter Main-Nav */
+}
+
+/* Links Sub-Nav */
+.sub-nav a {
+  
+  color: var(--text-color);
+  font-size: 0.9rem; /* kleiner als Mainnav */
+
+  transition: var(--transition-base);
+}
+
+.sub-nav a:hover {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  border-radius: var(--radius-sm);
+}
+
+
+
+
+.main-nav { /* TODO: Hintergrund, Border‑Bottom, evtl. Shadow */ }
+.nav-list { /* TODO: Flex‑Liste, Gap */ }
+.nav-link { /* TODO: Padding, Hover, Active (aria-current="page") */ }
+
+.sub-nav { /* TODO: dezente Subnavigation */ }
+
+.main-content { /* TODO: vertikale Abstände */ }
+.content-section { /* TODO: Standard‑Section (ggf. transparent auf Startseite) */ }
+.content-aside { /* TODO: Card‑Look für Asides */ }
+
+.site-footer { /* TODO: dunkler Footer mit Links */ }
+.site-footer a { /* TODO */ }
+
+
+
+
+
+/* ========================================
+   5. Startseite – Karten & Effekte (WCS‑602)
+   ======================================== */
+/* Hinweis: Für die Startseite brauchst du kein Body‑Scope.
+   Die Karten nutzen eine .cards‑Liste und .card Elemente. */
+
+.cards {
+  /* TODO: Flex‑Container: flex-wrap, gap (mobile‑first) */
+}
+.card.wcs {
+  /* TODO: Flex‑Spalte, responsive Breite (flex: 1 1 280px), min-width, Radius, Schatten */
+}
+.card.wcs .card-content { /* TODO: flex: 1 1 0; => CTA nach unten drücken */ }
+.card.wcs .cta { /* TODO: margin-top: auto; */ }
+
+
+.card-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    
+}
+
+.card {
+    flex: 1 1 300px; 
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+
+    background-color:var(--bg-white);
+    border: 1px solid rgb(203, 199, 199);
+    border-radius: var(--radius-md);
+    padding: 20px;
+
+    justify-content: space-between;
+    
+
+    box-shadow:var(--shadow-lg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+    
+}
+.card-button {
+    display: inline-block;
+    margin-top: auto;
+
+    padding: 10px 20px;
+
+    background: linear-gradient(135deg,var(--primary-color), var(--secondary-color) );
+    border-radius: var(--radius-md);
+
+    color: white;
+    text-decoration: none;
+} 
+
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-button:hover {
+    transform: scale(1.05); /* leicht vergrößern */
+    box-shadow: var(--shadow-sm)
+}
+
+
+
+/* @media (min-width: …) {  TODO: Spaltensprünge / größere Abstände } */
+
+/* Hero‑Animation (nur Opacity/Transform animieren) */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+
+  /* TODO: from { opacity: 0; transform: translateY(20px); } to { … } */
+}
+.hero-section { /* TODO: animation: fadeIn 1s ease-out; */ }
+
+.highlight-card { /* TODO: Hover‑Lift: translateY, box-shadow, transition */ }
+.highlight-card:hover { /* TODO */ }
+
+h1 { /* TODO: dezenter text-shadow für Hauptüberschrift */ }
+
+.cta-button {
+  /* TODO: Gradient‑Button (linear-gradient 90deg, primary -> secondary) */
+}
+.cta-button:hover { /* TODO: leichtes scale(), kein underline */ }
+
+/* ========================================
+   6. Über‑Uns (About) – Team & Timeline (WCS‑603)
+   ======================================== */
+/* WICHTIG: Im HTML <body class="about-page"> setzen, sonst greifen die Stile nicht! */
+.about-page .team-member {
+  /* TODO: Card‑Look, text-align center, padding */
+}
+.about-page .team-member img {
+  /* TODO: runder Avatar, 150x150, object-fit: cover, filter: grayscale(100%), transition */
+}
+.about-page .team-member:hover img {
+  /* TODO: grayscale(0%) */
+}
+
+/* Kommentar‑Selektor (beschreibend):
+   [Selector für Timeline‑Einträge in der About‑Seite, die eine vertikale Linie links und einen runden Marker oben anzeigen]
+   Vorschlag (selbst ableiten): .about-page .timeline-item { ... } und ::before { ... }
+*/
+
+/* Box‑Shadows für Sections (scoped auf About) */
+.about-page section { /* TODO: background, padding, radius, shadow */ }
+
+
+.team-member {
+    text-align: center;
+    align-items: center; 
+    padding: var(--spacing-lg);
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter var(--transition-base);
+}
+
+.team-member:hover img {
+    filter: grayscale(0%);
+}
+
+
+
+.timeline-item {
+    position: relative;
+    padding-left: var(--spacing-xl);
+    border-left: 3px solid var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+/* ========================================
+   7. Kurse – Grid & Cards (WCS‑604)
+   ======================================== */
+/* WICHTIG: Im HTML <body class="kurse-page"> setzen. */
+.kurse-page section.content-section {
+  /* TODO: display: grid; gap; (ab bestimmter Breite: grid-template-columns) */
+}
+.kurse-page section.content-section > header {
+  /* TODO: grid-column: 1 / -1; */
+}
+
+/* Kurs‑Cards (existieren oft als <article class="card">) */
+.kurse-page .kurs-card,
+.kurse-page article.card {
+  /* TODO: Card‑Look, overflow: hidden; transition; flex‑column; padding: 0; */
+}
+.kurse-page .kurs-card:hover,
+.kurse-page article.card:hover { /* TODO: Lift‑Hover */ }
+
+/* Verlaufs‑Header der Kurskarte */
+.kurse-page .kurs-card > header,
+.kurse-page article.card > header { /* TODO: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) */ }
+
+/* Innenabstände für Card‑Inhalte außer Header */
+.kurse-page .kurs-card > *:not(header),
+.kurse-page article.card > *:not(header) { /* TODO: padding */ }
+
+/* Optional: Kategorie‑Badges */
+.kurse-page .category-badge { /* TODO: pill badge (display:inline-block, radius:9999px) */ }
+
+/* Tabelle (zebra + hover) */
+.kurse-page .schedule-table { /* TODO: width:100%; border-collapse; background; border */ }
+.kurse-page .schedule-table tbody tr:nth-child(even) { /* TODO: zebra */ }
+.kurse-page .schedule-table tbody tr:hover { /* TODO: hover background + transition */ }
+
+/* Kommentar‑Selektor (beschreibend):
+   [Icon vor Begriffen in Kursdetails animieren, wenn Karte hovered]
+   Tipp: ::before auf dl dt und im Hover der Karte transformieren.
+*/
+
+.kurs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+.kurs-card {
+    background: white;
+    border: 1px solid var(--border-color); /* Damit man die Karte sieht */
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.kurs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.kurs-card-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white; /* Weißer Text auf dunklem Verlauf */
+    padding: var(--spacing-md);
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+tbody tr:hover {
+    background-color: #e5e7eb;
+    transition: background-color var(--transition-fast);
+}
+
+.chart-wrapper {
+            max-width: 800px;
+            margin: 2rem auto;
+            border: 1px solid #eee; 
+        }
+        /* WICHTIG: amCharts braucht eine definierte Höhe! */
+        #chartdiv { width: 100%; height: 400px; }
+        
+        /* Grid für die Kurs-Karten */
+        .kurs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+
+
+
+
+
+/* ========================================
+   8. Veranstaltungen – Event‑Cards (WCS‑605)
+   ======================================== */
+/* WICHTIG: Im HTML <body class="veranstaltungen-page"> setzen. */
+.veranstaltungen-page article.card {
+  /* TODO: position:relative; Card‑Look; overflow:hidden; transition */
+}
+.veranstaltungen-page article.card::before {
+  /* TODO: schmale Gradient‑Leiste oben (absolute; left/right:0; height:4px) */
+}
+.veranstaltungen-page article.card:hover { /* TODO: Lift‑Hover */ }
+
+/* Kommentar‑Selektor (beschreibend):
+   [Datum‑Badges im Header der Event‑Card hervorheben – wähle die <time> Elemente im Header]
+   Beispielidee: .veranstaltungen-page article.card > header time { ... }
+*/
+.event-card {
+    position: relative;
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+}
+
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+
+
+/* ========================================
+   9. Kontakt – Formular & Fokus (WCS‑605)
+   ======================================== */
+/* WICHTIG: Im HTML <body class="kontakt-page"> setzen. */
+.kontakt-page .contact-form { /* TODO: Card‑Look ums Formular */ }
+.kontakt-page .contact-form .form-group { /* TODO: Abstände */ }
+.kontakt-page .contact-form .form-label { /* TODO: block + spacing */ }
+
+/* Inputs/Selects/Textareas – Focus‑Ring verstärken */
+.kontakt-page .contact-form .form-input,
+.kontakt-page .contact-form .form-select,
+.kontakt-page .contact-form .form-textarea { /* TODO: padding, border, radius, transition */ }
+.kontakt-page .contact-form .form-input:focus,
+.kontakt-page .contact-form .form-select:focus,
+.kontakt-page .contact-form .form-textarea:focus { /* TODO: outline:none; border-color; box-shadow halo */ }
+
+/* :focus-within für aktive Gruppe */
+.kontakt-page .contact-form .form-group:focus-within { /* TODO: dezente Hinterlegung */ }
+
+/* Senden‑Button mit Verlauf */
+.kontakt-page .contact-form .btn-primary { /* TODO: gradient background + hover/active */ }
+
+/* ========================================
+   10. Rechtliches – Konsistenz (WCS‑606)
+   ======================================== */
+/* WICHTIG: Im HTML <body class="legal-page …"> setzen (z. B. .impressum-page). */
+.legal-page .content-section {
+  /* TODO: Card‑Look + position:relative für oberen ::before‑Akzent */
+}
+.legal-page .content-section::before {
+  /* TODO: schmale Gradient‑Top‑Border über die volle Breite */
+}
+.legal-page dl dt { /* TODO: dt etwas stärker betonen */ }
+
+/* Utilities */
+.embedded-map { /* TODO: responsive Iframe (Breite 100%), Border, Radius, Shadow */ }
+
+/* ========================================
+   11. Media Queries (optional)
+   ======================================== */
+/* @media (min-width: 40rem) {  TODO: größere Abstände, mehr Spalten, etc. } */
+/* @media (min-width: 56.25rem) {  TODO: 3‑Spalten‑Layout für Startseitenkarten } */
+
+/* Mobile Navigation Logik */
+@media (max-width: 768px) {
+    .main-nav .nav-list {
+        display: none; /* Standardmäßig versteckt auf Mobile */
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    /* Diese Klasse wird später per JS hinzugefügt */
+    .main-nav .nav-list.open {
+        display: flex; /* Sichtbar wenn 'open' */
+    }
+    
+    #menu-toggle {
+        display: block; /* Button nur mobil zeigen */
+        margin-left: auto; /* Nach rechts schieben */
+    }
+}
+
+
+@media (min-width: 769px) {
+    #menu-toggle { display: none; } /* Desktop: Button weg */
+}
+
+.form-error {
+    color: red;     /*danger-color*/
+    font-weight: bold;
+}
+
+/* Styling für die Warenkorb-Anzeige */
+#cart-display {
+    background-color: #0d0101;
+    padding: 8px 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}

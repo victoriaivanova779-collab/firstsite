@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <!-- Zeichensatz: UTF-8 für internationale Zeichen -->
+    <meta charset="utf-8">
+
+    <!-- Viewport: Wichtig für Responsive Design auf mobilen Geräten -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Seitentitel: Erscheint im Browser-Tab und ist wichtig für SEO -->
+    <title>HTML-Showcase – Victoria Ivanova - Gemeinschaftszentrum Offenburg</title>
+
+    <!-- Autor: Wer hat diese Seite erstellt? -->
+    <meta name="Victoria Ivanova" content="Dein Name hier eintragen">
+
+    <!-- Datum: Wann wurde die Seite erstellt/aktualisiert? -->
+    <meta name="2025-10-20" content="2025-01-15">
+
+    <!-- Keywords: Suchbegriffe für Suchmaschinen (veraltet, aber noch gebräuchlich) -->
+    <meta name="keywords" content="HTML, Showcase, Tutorial, Gemeinschaftszentrum, Offenburg, Webtechnologie, Hochschule Offenburg, Web-Technologie">
+
+    <!-- Description: Kurzbeschreibung der Seite (max. 160 Zeichen) – erscheint in Suchergebnissen und beim Teilen in WhatsApp/Social Media -->
+    <meta name="description" content="Hier an der Hochschule Offenburg im Web-Technologie Kurs lernen wir HTML von Grund auf. Am Beispiel des Gemeinschaftszentrums Offenburg erhalten wir eine Übersicht aller wichtigen HTML-Tags.">
+    
+
+    <!-- Robots: Anweisung für Suchmaschinen-Crawler -->
+    <meta name="robots" content="index,follow">
+
+    <!-- Zielgruppe: Für wen ist diese Seite gedacht? -->
+    <meta name="audience" content="all">
+
+    <!-- Thema der Seite -->
+    <meta name="page-topic" content="HTML Tutorial">
+
+    <!-- Wie oft sollen Crawler zurückkommen? -->
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Platzhalter für CSS -->
+    <link rel="stylesheet" href="../misc/css-template.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+</head>
+
+<body>
+    <!-- Aufgabe für dich: Lies diesen Kommentar und erledige die Punkte unten.
+         Du arbeitest in deinem eigenen Repo in der Datei misc/html-template.html.
+         Suche die genannten Bereiche über die Navigation (z. B. "Listen", "Tabellen", "Formulare"). -->
+
+    <!-- Was du ändern sollst (einfach erklärt):
+         - Listen: Füge bei der ungeordneten Liste mit den Kursen zwei neue Angebote hinzu.
+         - Tabelle: Ergänze in der Wochenprogramm‑Tabelle einen weiteren Tag: Donnerstag.
+         - Formular: Im Select "Kursauswahl" füge zwei neue Optionen hinzu.
+         - Links: Ergänze unter "Links" einen weiteren externen Link (z. B. zu einer passenden Organisation).
+         - Textformatierung: Schreibe im Bereich "Grundprinzip" einen eigenen Absatz (mind. 3 Sätze) zu deinen HTML‑Erfahrungen.
+         - Details/Summary: Füge im FAQ‑Bereich zwei weitere Fragen + Antworten hinzu.
+         - Time‑Element: Ändere das Veranstaltungsdatum auf ein anderes Datum in 2025.
+         - Audio/Video: Füge die mp3 und das ogg in dein Projekt hinzu und binde es in das Audio-Element ein. -->
+
+<!-- Header-Bereich der Seite -->
+<header id="site-header" class="site-header">
+    <div class="container">
+        <h1 class="site-title">HTML ist die Grundlage des Webs</h1>
+        <p class="site-description">
+            HTML ist keine Programmiersprache, sondern eine <strong>Auszeichnungssprache</strong>.
+            Sie beschreibt die <em>Struktur</em> und <em>Bedeutung</em> von Inhalten.
+            Mehr braucht es für viele Anwendungsfälle nicht.
+        </p>
+        <p class="site-meta">
+            <small>Willkommen beim HTML-Showcase des Gemeinschaftszentrums Offenburg</small>
+        </p>
+    </div>
+</header>
+
+<!-- Navigation mit internen Links (Anker) -->
+<nav id="main-navigation" class="main-nav" aria-label="Hauptnavigation">
+    <div class="container">
+        <h2>Inhaltsverzeichnis</h2>
+        <ul class="nav-list">
+            <li><a href="#grundprinzip" class="nav-link">Grundprinzip</a></li>
+            <li><a href="#textformatierung" class="nav-link">Textformatierung</a></li>
+            <li><a href="#listen" class="nav-link">Listen</a></li>
+            <li><a href="#links" class="nav-link">Links</a></li>
+            <li><a href="#medien" class="nav-link">Medien</a></li>
+            <li><a href="#tabellen" class="nav-link">Tabellen</a></li>
+            <li><a href="#formulare" class="nav-link">Formulare</a></li>
+            <li><a href="#semantik" class="nav-link">Semantik</a></li>
+            <li><a href="#interaktiv" class="nav-link">Interaktiv</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hauptinhalt der Seite -->
+<main id="main-content" class="main-content">
+
+    <!-- Section 1: Grundprinzip -->
+    <section id="grundprinzip" class="content-section">
+        <h2>Grundprinzip von HTML</h2>
+        <p class="intro-text">
+            HTML liefert die <mark class="highlight">Struktur</mark>, nicht das Design und nicht die Logik.
+            Der Browser liest die Auszeichnung, baut daraus ein <abbr title="Document Object Model">DOM</abbr>
+            und rendert dieses.
+        </p>
+        <p>
+            Mit ein paar wenigen Tags lassen sich die meisten Inhalte darstellen.
+            HTML ist <strong>stabil</strong>, <strong>universell</strong> und <strong>zukunftssicher</strong>.
+        </p>
+
+        <!-- Aufklappbarer Bereich ohne JavaScript -->
+        <details class="expandable">
+            <summary>Mehr über das DOM erfahren</summary>
+            <p class="details-content">
+                Das DOM ist eine Baumstruktur, die alle HTML-Elemente repräsentiert.
+                JavaScript kann darauf zugreifen und Elemente dynamisch ändern.
+            </p>
+        </details>
+    </section>
+
+    <!-- Section 2: Textformatierung -->
+    <section id="textformatierung" class="content-section">
+        <h2>Textformatierung</h2>
+
+        <h3>Überschriften (h1 bis h6)</h3>
+        <p>HTML unterstützt Überschriften von <code>&lt;h1&gt;</code> bis <code>&lt;h6&gt;</code>:</p>
+        <h4 class="demo-heading">Das ist eine H4-Überschrift</h4>
+        <h5 class="demo-heading">Das ist eine H5-Überschrift</h5>
+        <h6 class="demo-heading">Das ist eine H6-Überschrift</h6>
+
+        <h3>Textauszeichnung</h3>
+        <div class="text-examples">
+            <p>
+                <strong class="bold-text">Fett (strong)</strong> für wichtige Betonung.<br>
+                <b class="bold-style">Fett (b)</b> für stilistische Hervorhebung ohne besondere Bedeutung.<br>
+                <em class="emphasis">Kursiv (em)</em> für betonte Aussprache.<br>
+                <i class="italic-style">Kursiv (i)</i> für technische Begriffe oder Fremdwörter.<br>
+                <mark class="marked-text">Markiert (mark)</mark> für hervorgehobene Textpassagen.<br>
+                <small class="small-text">Klein (small)</small> für Kleingedrucktes oder Nebensätze.<br>
+                <del class="deleted-text">Durchgestrichen (del)</del> für gelöschten Text.<br>
+                <ins class="inserted-text">Unterstrichen (ins)</ins> für eingefügten Text.<br>
+                Text mit <sub>Tiefstellung (sub)</sub> wie in H<sub>2</sub>O.<br>
+                Text mit <sup>Hochstellung (sup)</sup> wie in x<sup>2</sup>.<br>
+                <code class="inline-code">Code (code)</code> für inline Code-Snippets.<br>
+                <kbd class="keyboard">Tastatur (kbd)</kbd> wie <kbd>Strg</kbd> + <kbd>C</kbd>.<br>
+                <samp class="sample-output">Sample Output (samp)</samp> für Programmausgaben.<br>
+                <var class="variable">Variable (var)</var> für mathematische Variablen wie <var>x</var>.
+            </p>
+        </div>
+
+        <h3>Zitate</h3>
+        <blockquote class="quote-block">
+            <p>"Das Web ist für alle da, unabhängig von Hardware, Software, Sprache, Ort oder Fähigkeit."</p>
+            <footer class="quote-footer">— Tim Berners-Lee in <cite>Accessibility Statement</cite></footer>
+        </blockquote>
+
+        <p>
+            Inline-Zitat: <q class="inline-quote">HTML ist die Lingua Franca des Webs</q>
+        </p>
+
+        <h3>Präformatierter Text und Code</h3>
+        <pre class="code-block"><code>&lt;button class="btn"&gt;Klick mich&lt;/button&gt;</code></pre>
+        <p>Ein Button in HTML ist ein Button. Funktioniert zuverlässig in allen Browsern.</p>
+
+        <h3>Sonstige Text-Elemente</h3>
+        <p>
+            Zeilenumbruch mit <code>&lt;br&gt;</code>:<br>
+            Erste Zeile<br>
+            Zweite Zeile<br>
+            Dritte Zeile
+        </p>
+
+        <p>
+            Horizontale Linie mit <code>&lt;hr&gt;</code>:
+        </p>
+        <hr class="divider">
+
+        <p>
+            Sehr lange Wörter mit <code>&lt;wbr&gt;</code> (Word Break Opportunity):
+            Donau<wbr>dampf<wbr>schiff<wbr>fahrts<wbr>gesellschafts<wbr>kapitän
+        </p>
+    </section>
+
+    <!-- Section 3: Listen -->
+    <section id="listen" class="content-section">
+        <h2>Listen</h2>
+
+        <h3>Ungeordnete Liste (ul)</h3>
+        <p>Unsere Kursangebote:</p>
+        <ul class="course-list">
+            <li class="course-item">Tapata-Kurse</li>
+            <li class="course-item">Kreativwerkstatt</li>
+            <li class="course-item">Sprachcafé</li>
+            <li class="course-item">Seniorentanz</li>
+            <li class="course-item">Kindertheater</li>
+            <li class="course-item">Tanz-Kurs</li>
+            <li class="course-item">Zeichen-Kurs</li>
+        </ul>
+
+        <h3>Geordnete Liste (ol)</h3>
+        <p>Anmeldeprozess Schritt für Schritt:</p>
+        <ol class="process-list">
+            <li class="process-step">Anmeldung am Empfang</li>
+            <li class="process-step">Zahlung der Kursgebühr</li>
+            <li class="process-step">Erhalt der Teilnahmebestätigung</li>
+            <li class="process-step">Besuch des ersten Kurstermins</li>
+            <li class="process-step">Feedback-Bogen ausfüllen</li>
+        </ol>
+
+        <h3>Definitionsliste (dl)</h3>
+        <dl class="definition-list">
+            <dt class="term">Öffnungszeiten</dt>
+            <dd class="definition">Montag bis Freitag: 8:00 – 20:00 Uhr</dd>
+            <dd class="definition">Samstag: 10:00 – 18:00 Uhr</dd>
+
+            <dt class="term">Adresse</dt>
+            <dd class="definition">Musterstraße 123, 77652 Offenburg</dd>
+
+            <dt class="term">Telefon</dt>
+            <dd class="definition">+49 (0) 781 123 45 67</dd>
+        </dl>
+
+        <h3>Verschachtelte Listen</h3>
+        <ul class="nested-list">
+            <li class="list-item">Veranstaltungen
+                <ul class="sublist">
+                    <li class="sublist-item">Kulturabende</li>
+                    <li class="sublist-item">Workshops</li>
+                    <li class="sublist-item">Feste und Feiern</li>
+                </ul>
+            </li>
+            <li class="list-item">Räumlichkeiten
+                <ol class="sublist">
+                    <li class="sublist-item">Mehrzweckraum (80 Personen)</li>
+                    <li class="sublist-item">Seminarraum (25 Personen)</li>
+                    <li class="sublist-item">Gemeinschaftsküche</li>
+                </ol>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Section 4: Links und Anker -->
+    <section id="links" class="content-section">
+        <h2>Links und Anker</h2>
+
+        <h3>Externe Links</h3>
+        <p>
+            Besuchen Sie die <a href="https://www.offenburg.de" target="_blank" rel="noopener" class="external-link">Stadt Offenburg</a> oder
+            informieren Sie sich über <a href="https://www.w3.org" target="_blank" rel="noopener" class="external-link">Web-Standards beim W3C</a>
+            So erreichen Sie uns mit öffentlichen Verkehrsmitteln <a href= "https://www.bahn.de/" target="_blank" rel="noopener" class="external-link"></a>.
+        </p>
+
+        <h3>Interne Links (Anker)</h3>
+        <p>
+            Springen Sie zurück zum <a href="#grundprinzip" class="internal-link">Grundprinzip</a> oder
+            lesen Sie mehr über <a href="#formulare" class="internal-link">Formulare</a>.
+        </p>
+
+        <h3>E-Mail-Link</h3>
+        <p>
+            Kontaktieren Sie uns: <a href="mailto:info@gemeinschaftszentrum-offenburg.de" class="email-link">info@gemeinschaftszentrum-offenburg.de</a>
+        </p>
+
+        <h3>Telefon-Link</h3>
+        <p>
+            Rufen Sie an: <a href="tel:+497811234567" class="phone-link">+49 (0) 781 123 45 67</a>
+        </p>
+
+        <h3>Download-Link</h3>
+        <p>
+            <a href="sample.pdf" download class="download-link">📄 Programmheft herunterladen (PDF)</a>
+        </p>
+    </section>
+
+    <!-- Section 5: Medien -->
+    <section id="medien" class="content-section">
+        <h2>Medien: Bilder, Audio, Video</h2>
+
+        <h3>Bild (img) mit Figure</h3>
+        <figure class="media-figure">
+            <img src="../images/logo.svg" alt="Logo des Gemeinschaftszentrums Offenburg" class="media-image" width="200" height="200">
+            <figcaption class="media-caption">Logo des Gemeinschaftszentrums Offenburg</figcaption>
+        </figure>
+
+        <h3>Audio (audio)</h3>
+
+        <audio controls class="audio-player">
+            <!-- Füge Audio-Elemente hier hinzu (willkommen.mp3, willkommen.ogg) -->
+            <!-- <source src="" type="audio/mpeg"> -->
+            <!-- <source src="" type="audio/ogg">  -->
+            Ihr Browser unterstützt das Audio-Element nicht.
+        </audio>
+        <p class="media-description"><small>Begrüßung durch die Geschäftsführung</small></p>
+
+        <h3>Video (video)</h3>
+        <video width="560" height="315" controls poster="https://upload.wikimedia.org/wikipedia/commons/c/c5/Big_buck_bunny_poster_big.jpg" class="video-player">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            <track src="untertitel-de.vtt" kind="subtitles" srclang="de" label="Deutsch">
+            Ihr Browser unterstützt das Video-Element nicht.
+        </video>
+        <p class="media-description"><small>Virtueller Rundgang durch unsere Räumlichkeiten</small></p>
+
+        <h3>Eingebetteter Inhalt (iframe)</h3>
+        <iframe
+                width="400"
+                height="400"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=7.94%2C48.46%2C7.96%2C48.48"
+                title="Karte – Standort Gemeinschaftszentrum"
+                class="embedded-map"
+                loading="lazy">
+        </iframe>
+        <p class="media-description"><small>Interaktive Karte mit unserem Standort</small></p>
+    </section>
+
+    <!-- Section 6: Tabellen -->
+    <section id="tabellen" class="content-section">
+        <h2>Tabellen</h2>
+
+        <h3>Einfache Tabelle</h3>
+        <table class="schedule-table">
+            <caption class="table-caption">Wochenprogramm des Gemeinschaftszentrums</caption>
+            <thead>
+            <tr>
+                <th scope="col">Tag</th>
+                <th scope="col">Vormittag</th>
+                <th scope="col">Nachmittag</th>
+                <th scope="col">Abend</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+                <th scope="row" class="day-name">Montag</th>
+                <td class="event-cell">Yoga</td>
+                <td class="event-cell">Seniorentanz</td>
+                <td class="event-cell">Sprachkurs Englisch</td>
+            </tr>
+            <tr class="table-row">
+                <th scope="row" class="day-name">Dienstag</th>
+                <td class="event-cell">Kreativwerkstatt</td>
+                <td class="event-cell">Computertraining</td>
+                <td class="event-cell">Filmabend</td>
+            </tr>
+            <tr class="table-row">
+                <th scope="row" class="day-name">Mittwoch</th>
+                <td class="event-cell">Spielgruppe</td>
+                <td class="event-cell">Nähkurs</td>
+                <td class="event-cell">Tanzworkshop</td>
+            </tr>
+            <tr class="table-row">
+                <th scope="row" class="day-name">Donnerstag</th>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="4" class="table-footer"><small>Änderungen vorbehalten. Aktuelle Infos am Empfang.</small></td>
+            </tr>
+            </tfoot>
+        </table>
+
+        <h3>Komplexe Tabelle mit colspan/rowspan</h3>
+        <table class="rooms-table">
+            <caption class="table-caption">Raumausstattung</caption>
+            <thead>
+            <tr>
+                <th rowspan="2">Raum</th>
+                <th colspan="2">Ausstattung</th>
+            </tr>
+            <tr>
+                <th>Technik</th>
+                <th>Kapazität</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+                <td class="room-name">Mehrzweckraum</td>
+                <td class="equipment-cell">Beamer, Sound</td>
+                <td class="capacity-cell">80 Personen</td>
+            </tr>
+            <tr class="table-row">
+                <td class="room-name">Seminarraum</td>
+                <td class="equipment-cell">Whiteboard</td>
+                <td class="capacity-cell">25 Personen</td>
+            </tr>
+            <tr class="table-row">
+                <td class="room-name">Küche</td>
+                <td class="equipment-cell">Vollausstattung</td>
+                <td class="capacity-cell">15 Personen</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section 7: Formulare -->
+    <section id="formulare" class="content-section">
+        <h2>Formulare</h2>
+
+        <form action="#" method="post" class="registration-form" id="event-form">
+            <fieldset class="form-fieldset">
+                <legend class="form-legend">Anmeldung für Veranstaltungen</legend>
+
+                <!-- Text-Input -->
+                <div class="form-group">
+                    <label for="name" class="form-label">Name <abbr title="Pflichtfeld" class="required">*</abbr></label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="Ihr vollständiger Name">
+                </div>
+
+                <!-- E-Mail-Input -->
+                <div class="form-group">
+                    <label for="email" class="form-label">E-Mail <abbr title="Pflichtfeld" class="required">*</abbr></label>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="ihre@email.de">
+                </div>
+
+                <!-- Tel-Input -->
+                <div class="form-group">
+                    <label for="tel" class="form-label">Telefon</label>
+                    <input type="tel" id="tel" name="tel" class="form-input" placeholder="+49 123 456789">
+                </div>
+
+                <!-- Date-Input -->
+                <div class="form-group">
+                    <label for="datum" class="form-label">Wunschtermin</label>
+                    <input type="date" id="datum" name="datum" class="form-input">
+                </div>
+
+                <!-- Time-Input -->
+                <div class="form-group">
+                    <label for="zeit" class="form-label">Wunschuhrzeit</label>
+                    <input type="time" id="zeit" name="zeit" class="form-input">
+                </div>
+
+                <!-- Number-Input -->
+                <div class="form-group">
+                    <label for="teilnehmer" class="form-label">Anzahl Teilnehmer</label>
+                    <input type="number" id="teilnehmer" name="teilnehmer" class="form-input" min="1" max="10" value="1">
+                </div>
+
+                <!-- Select/Dropdown -->
+                <div class="form-group">
+                    <label for="kurs" class="form-label">Kursauswahl</label>
+                    <select id="kurs" name="kurs" class="form-select">
+                        <option value="">Bitte wählen...</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="tanz">Seniorentanz</option>
+                        <option value="sprache">Sprachcafé</option>
+                        <option value="sprache">Zeichen-Kurs</option>
+                        <option value="sprache">Tanz-Kurs</option>
+                    </select>
+                </div>
+
+                <!-- Color-Input -->
+                <div class="form-group">
+                    <label for="farbe" class="form-label">Lieblingsfarbe</label>
+                    <input type="color" id="farbe" name="farbe" class="form-input" value="#0d6efd">
+                </div>
+
+                <!-- Datalist -->
+                <div class="form-group">
+                    <label for="bereich" class="form-label">Interessensbereich</label>
+                    <input list="bereiche" id="bereich" name="bereich" class="form-input">
+                    <datalist id="bereiche">
+                        <option value="Kultur">
+                        <option value="Sport">
+                        <option value="Bildung">
+                        <option value="Soziales">
+                    </datalist>
+                </div>
+
+                <!-- Radio-Buttons -->
+                <fieldset class="form-fieldset-nested">
+                    <legend class="form-legend-nested">Benachrichtigungen</legend>
+                    <div class="form-group-radio">
+                        <input type="radio" id="radio1" name="benachrichtigung" value="email" class="form-radio" checked>
+                        <label for="radio1" class="form-label-inline">Per E-Mail</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="radio2" name="benachrichtigung" value="sms" class="form-radio">
+                        <label for="radio2" class="form-label-inline">Per SMS</label>
+                    </div>
+                    <div class="form-group-radio">
+                        <input type="radio" id="radio3" name="benachrichtigung" value="keine" class="form-radio">
+                        <label for="radio3" class="form-label-inline">Keine</label>
+                    </div>
+                </fieldset>
+
+                <!-- Checkboxen -->
+                <fieldset class="form-fieldset-nested">
+                    <legend class="form-legend-nested">Interessen (Mehrfachauswahl)</legend>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="check1" name="interesse" value="sport" class="form-checkbox">
+                        <label for="check1" class="form-label-inline">Sport & Bewegung</label>
+                    </div>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="check2" name="interesse" value="kultur" class="form-checkbox">
+                        <label for="check2" class="form-label-inline">Kultur & Kunst</label>
+                    </div>
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="check3" name="interesse" value="sprachen" class="form-checkbox">
+                        <label for="check3" class="form-label-inline">Sprachen</label>
+                    </div>
+                </fieldset>
+
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label for="nachricht" class="form-label">Nachricht</label>
+                    <textarea id="nachricht" name="nachricht" rows="4" class="form-textarea" placeholder="Ihre Nachricht an uns..."></textarea>
+                </div>
+
+                <!-- File-Input -->
+                <div class="form-group">
+                    <label for="datei" class="form-label">Dokument hochladen</label>
+                    <input type="file" id="datei" name="datei" class="form-input" accept=".pdf,.doc,.docx">
+                </div>
+
+                <!-- Range-Input -->
+                <div class="form-group">
+                    <label for="level" class="form-label">Erfahrungslevel</label>
+                    <input type="range" id="level" name="level" class="form-range" min="1" max="5" value="3">
+                    <small class="form-hint">1 = Anfänger, 5 = Experte</small>
+                </div>
+
+                <!-- URL-Input -->
+                <div class="form-group">
+                    <label for="url" class="form-label">Website (optional)</label>
+                    <input type="url" id="url" name="url" class="form-input" placeholder="https://beispiel.de">
+                </div>
+
+                <!-- Search-Input -->
+                <div class="form-group">
+                    <label for="suche" class="form-label">Suche</label>
+                    <input type="search" id="suche" name="suche" class="form-input" placeholder="Durchsuchen...">
+                </div>
+
+                <!-- Checkbox für AGB -->
+                <div class="form-group-checkbox">
+                    <input type="checkbox" id="agb" name="agb" class="form-checkbox" required>
+                    <label for="agb" class="form-label-inline">Ich akzeptiere die <a href="../html/datenschutz.html" class="form-link">Datenschutzerklärung</a> <abbr title="Pflichtfeld" class="required">*</abbr></label>
+                </div>
+
+                <!-- Submit & Reset Buttons -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Absenden</button>
+                    <button type="reset" class="btn btn-secondary" id="reset-btn">Zurücksetzen</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <p class="form-note"><small><abbr title="Pflichtfeld" class="required">*</abbr> = Pflichtfeld</small></p>
+    </section>
+
+    <!-- Section 8: Semantische Elemente -->
+    <section id="semantik" class="content-section">
+        <h2>Semantische HTML-Elemente</h2>
+
+        <article class="card event-card">
+            <header class="card-header">
+                <h3 class="card-title">Nächste Veranstaltung: Sommerfest 2025</h3>
+                <p class="card-meta">
+                    <time datetime="2025-07-15" class="event-date">15. Juli 2025</time> –
+                    Veröffentlicht von <span class="event-author">Gemeinschaftszentrum Team</span>
+                </p>
+            </header>
+            <div class="card-body">
+                <p>
+                    Unser alljährliches Sommerfest findet auch dieses Jahr wieder im Innenhof statt.
+                    Alle Nachbarn und Interessierte sind herzlich eingeladen!
+                </p>
+            </div>
+            <footer class="card-footer">
+                <p><small>Tags: <span class="tag">Fest</span> <span class="tag">Sommer</span> <span class="tag">Gemeinschaft</span></small></p>
+            </footer>
+        </article>
+
+        <aside class="card info-box">
+            <h3>Wusstest du?</h3>
+            <p>
+                Das Gemeinschaftszentrum existiert seit <time datetime="1985" class="year">1985</time> und
+                hat bereits über 50.000 Besucher:innen empfangen.
+            </p>
+        </aside>
+
+        <h3>Übersicht semantischer Elemente</h3>
+        <ul class="semantic-list">
+            <li><code>&lt;header&gt;</code> – Kopfbereich einer Seite oder eines Abschnitts</li>
+            <li><code>&lt;nav&gt;</code> – Navigationsbereich</li>
+            <li><code>&lt;main&gt;</code> – Hauptinhalt der Seite</li>
+            <li><code>&lt;section&gt;</code> – Thematischer Abschnitt</li>
+            <li><code>&lt;article&gt;</code> – Eigenständiger Inhalt (z. B. Blogpost)</li>
+            <li><code>&lt;aside&gt;</code> – Ergänzender Inhalt (z. B. Sidebar)</li>
+            <li><code>&lt;footer&gt;</code> – Fußzeile</li>
+            <li><code>&lt;figure&gt;</code> und <code>&lt;figcaption&gt;</code> – Abbildung mit Beschriftung</li>
+            <li><code>&lt;time&gt;</code> – Zeitangabe</li>
+            <li><code>&lt;address&gt;</code> – Kontaktinformationen</li>
+        </ul>
+    </section>
+
+    <!-- Section 9: Interaktive Elemente -->
+    <section id="interaktiv" class="content-section">
+        <h2>Interaktive Elemente ohne JavaScript</h2>
+
+        <h3>Details / Aufklappbarer Bereich</h3>
+        <details class="expandable faq-item">
+            <summary class="faq-question">Häufig gestellte Fragen (FAQ)</summary>
+            <dl class="faq-content">
+                <dt class="faq-term">Wie melde ich mich für einen Kurs an?</dt>
+                <dd class="faq-answer">Kommen Sie einfach während unserer Öffnungszeiten vorbei oder rufen Sie uns an.</dd>
+
+                <dt class="faq-term">Gibt es Parkplätze?</dt>
+                <dd class="faq-answer">Ja, direkt vor dem Gebäude stehen 15 kostenfreie Parkplätze zur Verfügung.</dd>
+            </dl>
+        </details>
+
+        <h3>Progress & Meter</h3>
+        <div class="progress-wrapper">
+            <label for="anmeldungen" class="progress-label">Anmeldungen für den Yoga-Kurs:</label><br>
+            <progress id="anmeldungen" max="20" value="14" class="progress-bar">14 von 20</progress>
+            <span class="progress-text">14 von 20 Plätzen belegt</span>
+        </div>
+
+        <div class="meter-wrapper">
+            <label for="auslastung" class="meter-label">Aktuelle Auslastung des Zentrums:</label><br>
+            <meter id="auslastung" min="0" max="100" low="25" high="75" optimum="50" value="60" class="meter-bar">60%</meter>
+            <span class="meter-text">60%</span>
+        </div>
+    </section>
+
+</main>
+
+<!-- Fußzeile der Seite -->
+<footer id="site-footer" class="site-footer">
+    <hr class="divider">
+    <div class="container">
+        <p class="footer-links">
+            <small>
+                © 2025 Gemeinschaftszentrum Offenburg |
+                <a href="../html/impressum.html" class="footer-link">Impressum</a> •
+                <a href="../html/datenschutz.html" class="footer-link">Datenschutz</a> •
+                <a href="../html/erklaerungBF.html" class="footer-link">Barrierefreiheit</a>
+            </small>
+        </p>
+        <p class="footer-tagline">
+            <small>
+                <strong>Fazit:</strong> HTML ist stabil, klar und robust.
+                Wer die Grundlagen versteht, baut zukunftssichere Anwendungen.
+            </small>
+        </p>
+    </div>
+</footer>
+
+<!-- Platzhalter für JavaScript (wird in späteren Terminen eingefügt) -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>

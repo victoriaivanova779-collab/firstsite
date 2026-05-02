@@ -1,0 +1,40 @@
+/* ============================================
+   CSS Template - Minimal Reset + Container
+   ============================================ */
+
+/* --- CSS Reset & Box Sizing --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* --- Root & Body --- */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+}
+
+/* --- Main Page Container --- */
+body > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    body > * {
+        padding: 1rem;
+    }
+}
