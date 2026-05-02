@@ -14,13 +14,13 @@ body{
     margin: 10px 5px; (10px oben/unten, 5px links/rechts).*/
     margin: 20px;
 
-    /*Padding*/
-    padding: 0;
+    /*Innenabstand*/
+    padding: 0px;
 
     color:var(--text-color);
     background-color:var(--bg-light);
 
-    font-family: sans-serif;
+    font-family: serif;
 }
 
 .site-header{
