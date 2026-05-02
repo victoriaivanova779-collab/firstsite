@@ -1,10 +1,9 @@
 :root{
-    --primary-color:black;
-    --secundary-color:brown;
-
     --text-color:black;
     --text-light:white;
+
     --bg-color:black;
+    --bg-alternativ:brown;
     --bg-light:beige;
 }
 
@@ -26,6 +25,6 @@ body{
 
 .site-header{
     color: var(--text-light);
-    background:var(--secundary-color);
+    background:var(--bg-alternativ);
     padding: 20px;
 }
