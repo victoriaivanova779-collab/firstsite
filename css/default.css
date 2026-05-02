@@ -1,11 +1,11 @@
 :root{
-    --primary-color:var(black);
-    --secundary-color:var(brown);
+    --primary-color:black;
+    --secundary-color:brown;
 
-    --text-color:var(black);
-    --text-light:var(white);
-    --bg-color:var(black);
-    --bg-light:vat(beige);
+    --text-color:black;
+    --text-light:white;
+    --bg-color:black;
+    --bg-light:beige;
 }
 
 body{
@@ -14,7 +14,18 @@ body{
     margin: 20px; (20px Abstand auf allen vier Seiten).
     margin: 10px 5px; (10px oben/unten, 5px links/rechts).*/
     margin: 20px;
-    color:var(--text-color);
-    background:var(--bg-light);
 
+    /*Padding*/
+    padding: 0;
+
+    color:var(--text-color);
+    background-color:var(--bg-light);
+
+    font-family: sans-serif;
+}
+
+.site-header{
+    color: var(--text-light);
+    background:var(--secundary-color);
+    padding: 20px;
 }
