@@ -3,8 +3,9 @@
     --text-light:white;
 
     --bg-color:black;
-    --bg-alternativ:brown;
+    --bg-color:white;
     --bg-light:beige;
+    
 }
 
 body{
@@ -18,13 +19,18 @@ body{
     padding: 0px;
 
     color:var(--text-color);
-    background-color:var(--bg-light);
+    background-color:var(--bg-color);
 
-    font-family: serif;
+    font-family: serif; /* sans serif - ohne serifen*/
 }
 
 .site-header{
-    color: var(--text-light);
+    color: var(--text-color);
     background:var(--bg-alternativ);
-    padding: 20px;
+    
+}
+
+.nav-list{
+    display: flex;
+    gap: 10px;
 }
