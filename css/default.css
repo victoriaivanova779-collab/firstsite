@@ -1,9 +1,9 @@
 :root{
     --text-color:black;
-    --text-light:white;
+    --text-white:white;
 
     --bg-color:black;
-    --bg-color:white;
+    --bg-white:white;
     --bg-light:beige;
     
 }
@@ -13,24 +13,48 @@ body{
     margin-top, margin-right, margin-bottom, margin-left.
     margin: 20px; (20px Abstand auf allen vier Seiten).
     margin: 10px 5px; (10px oben/unten, 5px links/rechts).*/
-    margin: 20px;
+    margin: 0px;
 
     /*Innenabstand*/
     padding: 0px;
 
+    background-color:var(--bg-white);
     color:var(--text-color);
-    background-color:var(--bg-color);
+    
 
-    font-family: serif; /* sans serif - ohne serifen*/
+    font-family: sans-serif; 
 }
 
 .site-header{
-    color: var(--text-color);
-    background:var(--bg-alternativ);
+    background:var(--bg-color);
+    padding: 20px 0px;
     
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-content: flex-start; /* Alles beginnt links */
 }
 
 .nav-list{
     display: flex;
-    gap: 10px;
+    list-style: none; /* Entfernt die Punkte */
+    gap: 50px;
+    align-items: center;
+
+
+}
+
+.nav-link{
+    color:var(--text-white);
+    text-decoration: none; /* Entfernt en Unterstrich */
+    font-family: sans-serif;  
+}
+
+.logo{
+    color:var(--text-white);
+    order: -1;
+    margin-left: 30px;
 }
