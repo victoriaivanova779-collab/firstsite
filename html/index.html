@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
-    <meta name="Victoria Ivanova" content="static webside">
-    <meta name="2026-01-05" content="start">
+    <meta name="author" content="Victoria Ivanova">
     <meta name="keywords" content="keyword, keyword, keyword">
     <meta name="description" content="website to start with">
     <meta name="robots" content="index,follow">
@@ -21,33 +20,29 @@
 
 <body>
     <!-- Header-Bereich der Seite -->
-    <!--<header id="site-header" class="site-header">
-        <div class="container">
-            <h1 class="site-title">Website</h1>
-            <p class="site-description">
-                Hier ertselle ich meine statische Website mit <strong>HTML</strong>.
-                Designt mit <em>CSS</em> und funktioniert via <em>JavaScript</em>.
-            </p>
-            <p class="site-meta">
-                <small>Willkommen</small>
-            </p>
-        </div>
+    <header id="site-header" class="site-header">
+        <!-- Navigation mit internen Links (Anker) -->
+        <nav id="main-navigation" class="main-nav" aria-label="Hauptnavigation">
+            <div class="container nav-wrapper">
+
+                <ul class="nav-list">
+                    <li><a href="#ueberuns" class="nav-link">Über uns</a></li>
+                    <li><a href="#kurse" class="nav-link">Kurse</a></li>
+                    <li><a href="#produkte" class="nav-link">Produkte</a></li>
+                    <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                </ul>
+
+                <div class="logo">
+                    <h1>Klass!</h1>
+                </div>
+            </div>
+        </nav>
     </header>
-    -->
 
-    <!-- Navigation mit internen Links (Anker) -->
-    <nav id="main-navigation" class="main-nav" aria-label="Hauptnavigation">
-        <div class="container">
 
-            <ul class="nav-list">
-                <li><a href="#ueberuns" class="nav-link">Über uns</a></li>
-                <li><a href="#kurse" class="nav-link">Kurse</a></li>
-                <li><a href="#produkte" class="nav-link">Produkte</a></li>
-                <li><a href="#galerie" class="nav-link">Galerie</a></li>
-                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
-            </ul>
-        </div>
-    </nav>
+
+
 
     <!-- Hauptinhalt der Seite -->
     <main id="main-content" class="main-content">
@@ -66,6 +61,7 @@
             <figure class="media-figure">
                 <img src="../images/bild2.jpg" class="media-image" width="1600" height="700">
             </figure>
+
             <h2>Kurse</h2>
 
             <article class="course-item">
@@ -85,6 +81,7 @@
             <figure class="media-figure">
                 <img src="../images/bild3.jpeg" class="media-image" width="1600" height="700">
             </figure>
+
             <h2>Produkte</h2>
 
             <article class="product-card">
@@ -102,9 +99,9 @@
                     <p class="description">
                         Eine Beschreibung was auf den Bildern zu sehen ist.
                     </p>
-                
+
                     <div class="price-section">
-                    <span class="price">10,00 €</span>
+                        <span class="price">10,00 €</span>
                     </div>
 
                     <button class="buy-button">Nehm ich mit</button>
@@ -113,18 +110,7 @@
 
         </section>
 
-        <section id="galerie" class="gallery-list">
-            <div class="gallery-container">
-                <img>
-                <img>
-                <img>
-            </div>
-        </section>
-
     </main>
-
-
-
 
 
 </body>
