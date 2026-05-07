@@ -46,13 +46,23 @@ body{
     gap: 100px;
     align-items: center;
     margin-left: 70px;
-
+    padding: 0;
 }
 
 .nav-link{
+    display: inline-block; /* Wichtig für die Transformation */
     color:var(--text-white);
     text-decoration: none; /* Entfernt en Unterstrich */
     font-family: sans-serif;  
+    transition: transform 0.3s ease; /* Macht die Bewegung geschmeidig */
+}
+
+.nav-link:hover{
+    transform: scale(1.1); /* Wird 10% größer */
+}
+
+.nav-link:active{
+
 }
 
 .logo{
