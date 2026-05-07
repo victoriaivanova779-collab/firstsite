@@ -23,6 +23,7 @@ body{
     
 
     font-family: sans-serif; 
+    
 }
 
 .site-header{
@@ -36,14 +37,15 @@ body{
     justify-content:center;
     align-items: center;
     justify-content: flex-start; /* Alles beginnt links */
+    
 }
 
 .nav-list{
     display: flex;
     list-style: none; /* Entfernt die Punkte */
-    gap: 50px;
+    gap: 100px;
     align-items: center;
-
+    margin-left: 70px;
 
 }
 
@@ -57,4 +59,18 @@ body{
     color:var(--text-white);
     order: -1;
     margin-left: 30px;
+}
+
+.media-image{
+    width: 100%; /* Volle Breite des Sichtbereichs */
+    height: 700px; 
+    object-fit: cover; /* Schneidet das Bild passend zu, ohne es zu quetschen */
+    object-position: center; /* Zentriert das Bild, damit wichtige Inhalte in der Mitte bleiben */
+    display: block; /* Verhindert Abstände nach unten */
+}
+
+.welcome-content{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
