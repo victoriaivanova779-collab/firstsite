@@ -1,86 +1,146 @@
-:root{
-    --text-color:black;
-    --text-white:white;
+:root {
+    --text-color: black;
+    --text-white: white;
 
-    --bg-color:black;
-    --bg-white:white;
-    --bg-light:beige;
-    
+    --bg-color: black;
+    --bg-white: white;
+    --bg-light: beige;
+
 }
 
-body{
+body {
     /*Außenabstand
     margin-top, margin-right, margin-bottom, margin-left.
     margin: 20px; (20px Abstand auf allen vier Seiten).
     margin: 10px 5px; (10px oben/unten, 5px links/rechts).*/
     margin: 0px;
-
     /*Innenabstand*/
     padding: 0px;
-
-    background-color:var(--bg-white);
-    color:var(--text-color);
-    
-
-    font-family: sans-serif; 
-    
+    background-color: var(--bg-white);
+    color: var(--text-color);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.site-header{
-    background:var(--bg-color);
+h2 {
+    text-align: center;
+    /* Textausrichtung */
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 38px;
+
+
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+/*-----------------------------------------------------------*/
+
+.site-header {
+    background: var(--bg-color);
     padding: 20px 0px;
-    
+
 }
 
-.nav-wrapper{
+.nav-wrapper {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start; /* Alles beginnt links */
-    
+    justify-content: flex-start;
+    /* Alles beginnt links */
+
 }
 
-.nav-list{
+.nav-list {
     display: flex;
-    list-style: none; /* Entfernt die Punkte */
+    list-style: none;
+    /* Entfernt die Punkte */
     gap: 100px;
     align-items: center;
     margin-left: 70px;
     padding: 0;
 }
 
-.nav-link{
-    display: inline-block; /* Wichtig für die Transformation */
-    color:var(--text-white);
-    text-decoration: none; /* Entfernt en Unterstrich */
-    font-family: sans-serif;  
-    transition: transform 0.3s ease; /* Macht die Bewegung geschmeidig */
+.nav-link {
+    display: inline-block;
+    /* Wichtig für die Transformation */
+    color: var(--text-white);
+    text-decoration: none;
+    /* Entfernt en Unterstrich */
+    font-family: sans-serif;
+    transition: transform 0.3s ease;
+    /* Macht die Bewegung geschmeidig */
 }
 
-.nav-link:hover{
-    transform: scale(1.1); /* Wird 10% größer */
+.nav-link:hover {
+    transform: scale(1.1);
+    /* Wird 10% größer */
 }
 
-.nav-link:active{
-
-}
-
-.logo{
-    color:var(--text-white);
+.logo {
+    color: var(--text-white);
     order: -1;
     margin-left: 30px;
 }
 
-.media-image{
-    width: 100%; /* Volle Breite des Sichtbereichs */
-    height: 700px; 
-    object-fit: cover; /* Schneidet das Bild passend zu, ohne es zu quetschen */
-    object-position: center; /* Zentriert das Bild, damit wichtige Inhalte in der Mitte bleiben */
-    display: block; /* Verhindert Abstände nach unten */
+.media-image {
+    width: 100%;
+    /* Volle Breite des Sichtbereichs */
+    height: 700px;
+    object-fit: cover;
+    /* Schneidet das Bild passend zu, ohne es zu quetschen */
+    object-position: center;
+    /* Zentriert das Bild, damit wichtige Inhalte in der Mitte bleiben */
+    display: block;
+    /* Verhindert Abstände nach unten */
 }
 
-.welcome-content{
+.welcome-content {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+/*-----------------------------------------------------------*/
+
+.content-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.content-section p {
+
+    font-weight: 400;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    /* Größerer Zeilenabstand für bessere Lesbarkeit */
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+/*-----------------------------------------------------------*/
+
+#kurse.content-section {
+    max-width: 100%; /* Hebt die 1100px Begrenzung auf */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.media-figure{
+    margin: 0;
+}
+
+.course-img {
+    width: 100%; /* Volle Breite des Sichtbereichs */
+    height: 700px;
+    object-fit: cover; /* Schneidet das Bild passend zu, ohne es zu quetschen */
+    object-position: center; /* Zentriert das Bild, damit wichtige Inhalte in der Mitte bleiben */
+    display: block; /* Verhindert Abstände nach unten */
 }
