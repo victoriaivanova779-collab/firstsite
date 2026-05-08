@@ -108,13 +108,17 @@ h3 {
 .content-section {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.section-content{
+    
     text-align: center;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .content-section p {
-
+    
     font-weight: 400;
     max-width: 900px;
     margin: 0 auto;
@@ -126,6 +130,7 @@ h3 {
 }
 
 /*-----------------------------------------------------------*/
+
 
 #kurse.content-section {
     max-width: 100%; /* Hebt die 1100px Begrenzung auf */
@@ -144,3 +149,14 @@ h3 {
     object-position: center; /* Zentriert das Bild, damit wichtige Inhalte in der Mitte bleiben */
     display: block; /* Verhindert Abstände nach unten */
 }
+
+.course-container{
+    
+    display: flex; /* Aktiviert das Flexbox-System */
+    flex-direction: column;
+    gap: 100px;
+
+}
+
+
+
