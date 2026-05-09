@@ -85,7 +85,7 @@ h3 {
     margin-left: 30px;
 }
 
-.hero-image {
+.hero-img {
     width: 100%;
     /* Volle Breite des Sichtbereichs */
     height: 700px;
@@ -110,13 +110,13 @@ h3 {
     padding-bottom: 80px;
 }
 
-.section-content-about{
+.about-container{
     text-align: center;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-.content-section-about p {
+.about-container p {
     
     font-weight: 400;
     max-width: 900px;
@@ -131,13 +131,14 @@ h3 {
 /*-----------------------------------------------------------*/
 
 
-#kurse.content-section {
+.content-section-course {
     max-width: 100%; /* Hebt die 1100px Begrenzung auf */
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 80px;
 }
 
-.media-figure{
+.full-width-figure{
     margin: 0;
 }
 
@@ -154,8 +155,48 @@ h3 {
     display: flex; /* Aktiviert das Flexbox-System */
     flex-direction: column;
     gap: 100px;
-
+    text-align: center;
 }
+
+.course-item {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.description{
+    font-weight: 400;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+    /* Größerer Zeilenabstand für bessere Lesbarkeit */
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+/*-----------------------------------------------------------*/
+
+.content-section-product{
+    max-width: 100%; /* Hebt die 1100px Begrenzung auf */
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 80px;
+}
+
+.full-width-figure-product{
+    margin: 0;
+}
+
+.product-img{
+    width: 100%; /* Volle Breite des Sichtbereichs */
+    height: 700px;
+    object-fit: cover; /* Schneidet das Bild passend zu, ohne es zu quetschen */
+    object-position: center; /* Zentriert das Bild, damit wichtige Inhalte in der Mitte bleiben */
+    display: block; /* Verhindert Abstände nach unten */
+}
+
+
 
 
 
