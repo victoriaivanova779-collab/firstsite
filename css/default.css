@@ -223,13 +223,13 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     
-    align-self: stretch;
+    
 }
 
 .product-description{
     font-weight: 400;
     width: 100%;
-    margin: 0 0 20px 0;
+    
     line-height: 1.5;
     /* Größerer Zeilenabstand für bessere Lesbarkeit */
     text-align:left;
@@ -255,14 +255,72 @@ h3 {
     text-align: center;
     padding: 10px;
     flex-shrink: 0;
+    outline: none;
 }
 
 .buy-button{
     cursor: pointer;
     flex-grow: 1;
-    padding: 10px 20px;
-    box-sizing: border-box; 
+    padding: 10px 100px;
+    font-size: small;
 }
+
+
+.product-info-detail h3{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.product-info-detail{
+    margin-top: 20px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 1.5;
+    /* Größerer Zeilenabstand für bessere Lesbarkeit */
+    text-align:left;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+}
+
+/*-----------------------------------------------------------*/
+
+/* Sanftes Hochgleiten für die ganze Seite */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  /* Positionierung */
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  
+
+  /* Form & Farbe (Dunkelgrau aus deinem Bild) */
+  background-color: #333333; 
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Macht es kreisrund */
+  
+  /* Zentrierung des Pfeils */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Styling */
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Kleiner Effekt beim Drüberfahren */
+.back-to-top:hover {
+  background-color: #555555;
+  transform: scale(1.1); /* Wird minimal größer */
+}
+
+
+
 
 
 
