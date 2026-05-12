@@ -291,6 +291,10 @@ html {
 
 .back-to-top {
   /* Positionierung */
+
+
+  transition: all 0.4s;  /* Sanfter Übergang */
+
   position: fixed;
   bottom: 80px;
   right: 30px;
@@ -318,6 +322,9 @@ html {
   background-color: #555555;
   transform: scale(1.1); /* Wird minimal größer */
 }
+
+/*-----------------------------------------------------------*/
+
 
 
 
