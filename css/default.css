@@ -1,4 +1,10 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     text-align: center;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0%;
@@ -6,37 +12,43 @@ body{
     color: black;
 }
 
-.site-header{
+.site-header {
     background-color: black;
+    padding: 5px 5%;
 }
 
-.main-nav{
+.main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10% 5%;
+    margin: 3%;
     color: white;
     position: relative;
+    z-index: 100;
+    background-color: black;
 }
 
-.logo{
-    font-size: 15px;
+.logo h1{
+    margin: 0;
+    line-height: 1;
+    font-size: 3rem;
 }
 
 /* --- HANDY-STYLING (Voraussetzung 1) --- */
 
-.menu-toggle{
+.menu-toggle {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 30px;
-    height: 21px;
+    height: 25px;
     background: transparent;
     border: none;
     cursor: pointer;
 }
 
-.menu-toggle span{
+.menu-toggle span {
     height: 3px;
     width: 100%;
     background-color: white;
@@ -45,7 +57,7 @@ body{
 
 /* Die Navigations-Liste auf dem Handy */
 
-.nav-links{
+.nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
@@ -53,59 +65,76 @@ body{
     top: 100%;
     left: 0%;
     padding: 2% 0;
+    list-style: none;
+
+    background-color: rgba(51, 51, 51, 0.3);
+    margin: 0%;
+    backdrop-filter: blur(5px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.nav-links li{
+.nav-links li {
     list-style: none;
     text-align: center;
 }
 
-.nav-links a{
+.nav-links a {
     display: block;
     padding: 4% 0;
     color: white;
     text-decoration: none;
 }
 
-.nav-links.activa{
+.nav-links.active {
     display: flex;
 }
 
 /* --- COMPUTER-STYLING (Voraussetzung 2) --- */
 @media (min-width: 768px) {
-  .menu-toggle {
-    display: none; 
-  }
 
-  .nav-links {
-    display: flex; 
-    flex-direction: row; 
-    position: static; 
-    width: auto; /* Nimmt nur so viel Platz ein, wie die Links brauchen */
-    background-color: transparent;
-    padding: 0;
-  }
+    .main-nav {
+        display: flex;
+        justify-content: center;
+        /* Zentriert ALLES (Logo + Links) */
+        align-items: center;
+        position: relative;
+        padding: 20px 5%;
+    }
 
-  .nav-links li {
-    /* Abstand zwischen den Elementen auf dem PC in % */
-    margin-left: 5%; 
-  }
-  
-  .nav-links a {
-    padding: 0;
-  }
+    .logo {
+        position: absolute;
+        left: 5%;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: 60%;
+        /* Nimmt nur so viel Platz ein, wie die Links brauchen */
+
+        padding: 0;
+        margin: 0 auto;
+        justify-content: space-evenly;
+
+        background-color: transparent;
+        backdrop-filter: none;
+
+        gap: 10%;
+    }
+
+    .nav-links li {
+        /* Abstand zwischen den Elementen auf dem PC in % */
+        margin-left: 5%;
+    }
+
+    .nav-links a {
+        padding: 0;
+        white-space: nowrap;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

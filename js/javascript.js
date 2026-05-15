@@ -1,9 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
 
-  const mobileMenu = document.getElementById('mobile-menu'); // Die ID deines Buttons
-  const navList = document.getElementById('nav-list');       // Die ID deiner UL-Liste
-
-  mobileMenu.addEventListener('click', () => {
-    // Schaltet die Klasse "active" an und aus
-    navList.classList.toggle('active');
-    console.log("Menü geklickt!"); // Zum Testen in der Browser-Konsole (F12)
-  });
+    // Prüfen, ob die Elemente überhaupt gefunden werden (gut für Fehlersuche)
+    if (mobileMenu && navList) {
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            console.log("Menü-Status: ", navList.classList.contains('active'));
+        });
+    } else {
+        console.error("Fehler: mobile-menu oder nav-list wurde im HTML nicht gefunden!");
+    }
+});
