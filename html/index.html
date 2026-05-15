@@ -21,7 +21,7 @@
 <body>
     <!-- Header-Bereich der Seite -->
 
-    <div id="top"></div>
+    
 
     <header id="site-header" class="site-header">
         <!-- Navigation mit internen Links (Anker) -->
@@ -77,7 +77,7 @@
             <article class="course-container">
                 <div class="course-content">
                     <h3>Name vom ersten Kurs</h3>
-                    <p class="description">Eine Beschreibung vom Kurs, Ziele und Herangehensweise.
+                    <p>Eine Beschreibung vom Kurs, Ziele und Herangehensweise.
                         kjbkajbkfjba bksbj jafbnk anjk kjbnkjnfc njndf, knkabsf,khfbincoabj. hbcjhbef c jshf,
                         knjgsmb bdsav.
                     </p>
@@ -86,31 +86,33 @@
             </article>
 
 
-            <article class="course-item">
+            <article class="course-container">
                 <div class="course-content">
                     <h3>Name vom zweiten Kurs</h3>
-                    <p class="description">Eine Beschreibung vom Kurs, Ziele und Herangehensweise.</p>
+                    <p>Eine Beschreibung vom Kurs, Ziele und Herangehensweise.</p>
                 </div>
 
             </article>
-
-
         </section>
 
-        <section id="produkte" class="content-section-product">
-            <figure class="full-width-figure-product">
-                <img src="../images/bild3.jpeg" class="product-img">
-            </figure>
+        <div class="main-img">
+            <img src="../images/bild3.jpeg">
+        </div>
 
-            <h2>Produkte</h2>
+        <section id="product" class="product-container">
+
 
             <article class="product-card">
+
+                <h2>Produkte</h2>
+
                 <div class="product-item">
-                    <img src="../images/bild4.4.jpg" alt="Produkt Ansicht 4" width="100px">
+                    <img src="../images/bild4.4.jpg" alt="Produkt Ansicht 4">
                 </div>
 
                 <div class="product-info">
-                    <h3 class="product-title">Produktname</h3>
+                    <h3>Produktname</h3>
+
                     <p class="product-description">
                         Eine Beschreibung was auf den Bildern zu sehen ist.
                     </p>
@@ -119,18 +121,24 @@
                         <span class="price">10,00 €</span>
                     </div>
 
+
                     <div class="action-bar">
                         <div class="simple-qty">
                             <input type="number" id="qtyInput" value="1" min="1">
-
-                        </div>
-                        <div>
-                            <button class="buy-button">Nehm ich mit</button>
                         </div>
 
+                        <div class="shipping">
+                            <p>Information über Versand</p>
+                        </div>
                     </div>
 
-                    <div class="product-info-detail">
+                    <div class="payment">
+                        <p>Versandbox</p>
+                    </div>
+
+
+
+                    <div class="product-detail">
                         <h3>Beschreibung</h3>
                         <ul class="detail-list">
                             <li class="details-item">Deitail 1</li>
@@ -144,13 +152,6 @@
             </article>
 
         </section>
-
-        <a href="#top" class="back-to-top">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="3" fill="none"
-                stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="18 15 12 9 6 15"></polyline>
-            </svg>
-        </a>
 
     </main>
 
