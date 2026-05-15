@@ -1,3 +1,102 @@
+body{
+    text-align: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0%;
+    background-color: white;
+    color: black;
+}
+
+.site-header{
+    background-color: black;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 5%;
+    color: white;
+    position: relative;
+}
+
+.logo{
+    font-size: 15px;
+}
+
+/* --- HANDY-STYLING (Voraussetzung 1) --- */
+
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Die Navigations-Liste auf dem Handy */
+
+.nav-links{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 2% 0;
+}
+
+.nav-links li{
+    list-style: none;
+    text-align: center;
+}
+
+.nav-links a{
+    display: block;
+    padding: 4% 0;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links.activa{
+    display: flex;
+}
+
+/* --- COMPUTER-STYLING (Voraussetzung 2) --- */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none; 
+  }
+
+  .nav-links {
+    display: flex; 
+    flex-direction: row; 
+    position: static; 
+    width: auto; /* Nimmt nur so viel Platz ein, wie die Links brauchen */
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .nav-links li {
+    /* Abstand zwischen den Elementen auf dem PC in % */
+    margin-left: 5%; 
+  }
+  
+  .nav-links a {
+    padding: 0;
+  }
+}
+
+
 
 
 
