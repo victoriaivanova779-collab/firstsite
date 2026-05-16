@@ -10,11 +10,16 @@ body {
     margin: 0%;
     background-color: white;
     color: black;
+    line-height: 1.8;
+}
+
+h2{
+    margin: 3%;
 }
 
 .site-header {
     background-color: black;
-    padding: 5px 5%;
+    
 }
 
 .main-nav {
@@ -22,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10% 5%;
-    margin: 3%;
+    margin: 0;
     color: white;
     position: relative;
     z-index: 100;
@@ -60,12 +65,18 @@ body {
 .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
     position: absolute;
+
+    width: 100%;
     top: 100%;
     left: 0%;
+    
+
     padding: 2% 0;
     list-style: none;
+    z-index: 1000;
+
+
 
     background-color: rgba(51, 51, 51, 0.3);
     margin: 0%;
@@ -89,6 +100,19 @@ body {
 .nav-links.active {
     display: flex;
 }
+
+.main-img img{
+    width: 100%; /* Nutzt die volle Breite des Containers */
+    height: auto; /* Behält das Seitenverhältnis bei, damit nichts verzerrt */
+    display: block; /* Verhindert kleine Abstände unter dem Bild */
+    object-fit: cover; /* Falls du feste Höhen nutzt, wird das Bild schön beschnitten */
+}
+
+.about{
+    margin: 10%;
+    
+}
+
 
 /* --- COMPUTER-STYLING (Voraussetzung 2) --- */
 @media (min-width: 768px) {
@@ -138,3 +162,4 @@ body {
         white-space: nowrap;
     }
 }
+
